@@ -1,0 +1,60 @@
+/* Estilos para el juego de Piedra, Papel o Tijera */
+.rps-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block; /* Esto asegura que los botones estén en fila */
+}
+
+.rps-button:hover {
+  background-color: #45a049;
+}
+
+.rps-result {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.rps-restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: none; /* Inicialmente oculto */
+  width: 200px; /* Tamaño del botón */
+  margin-left: auto; /* Centrado */
+  margin-right: auto; /* Centrado */
+}
+
+/* Aseguramos que el botón de reiniciar se centre */
+.rps-restart-button:hover {
+  background-color: #e53935;
+}
+
+/* Contenedor de todos los elementos, sin flex para todo */
+.content {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Centrar solo el contenedor de los botones de reiniciar */
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

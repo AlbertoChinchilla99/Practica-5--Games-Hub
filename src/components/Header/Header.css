@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se muevan a nuevas filas si no caben */
+  height: auto; /* Ajuste automático de la altura */
+  padding: 1rem; /* Espaciado uniforme */
+  justify-content: space-around; /* Distribuir uniformemente los botones */
+  align-items: center; /* Centrar verticalmente los elementos */
+  background-color: burlywood;
+  gap: 10px; /* Añadir espacio uniforme entre los botones */
+}
+
+header button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: rgb(255, 213, 136);
+  font-weight: 900;
+  border: 3px solid black;
+  cursor: pointer;
+  margin: 5px; /* Añadimos un margen uniforme */
+}
+
+.content {
+  width: 100%; /* Asegura que el área principal no interfiera con el header */
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column; /* Los botones se apilan verticalmente en pantallas pequeñas */
+    align-items: center; /* Centrar todos los botones */
+  }
+
+  header button {
+    width: 80%; /* Los botones ocupan la mayor parte del ancho */
+    text-align: center;
+  }
+}
